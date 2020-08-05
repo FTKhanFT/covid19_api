@@ -7,3 +7,10 @@ services:
     command: "node app.js"
     ports:
       - "5000:5000"
+    depends_on:
+      - "mongo"
+  mongo:
+    container_name: mongo_db
+    image: "mongo"
+    ports:
+      - "27017:27017"

@@ -1,8 +1,8 @@
 const DB_NAME = 'covid19_db';
 module.exports.MongoConfig = {
-    username: 'covidDB',
-    password: 'r00t@CovidDB',
-    uri: `mongodb+srv://covidDB:r00t%40CovidDB@covidcluster0-j26ii.mongodb.net/${DB_NAME}?retryWrites=true&w=majority`,
+    // username: 'covidDB',
+    // password: 'r00t@CovidDB',
+    uri: `mongodb://mongo:27017/newsdb`,
     options: {
         useNewUrlParser: true,
         useUnifiedTopology: true,
@@ -19,4 +19,3 @@ module.exports.Collections = {
     COLL_COUNTRIES: 'countries',
     COLL_HIT_COUNTER: 'hit_counter'
 };
-
